@@ -29,7 +29,7 @@ with [packer](https://www.github.com/wbthomason/packer.nvim):
 
 ```lua
 use {
-    "theoreichel/rails-minitest.nvim",
+    "theoo/rails-minitest.nvim",
     requires = { "numToStr/Fterm.nvim" }
 }
 ```
@@ -71,7 +71,7 @@ You can override default settings by providing a _list_ to the `setup({})` funct
   }
 ```
 
-### Call User Commands
+## Call User Commands
 
 Map a keyboard shortcut to:
 
@@ -81,14 +81,14 @@ Map a keyboard shortcut to:
 
 TODO: Improve doc
 
-### Customize matchers
+## Customize matchers
 
 The [config](lua/rails-minitest/init.lua) is self-explanatory. There is two kind of matchers:
 
 - `matchers` filter files where the plugin can be called. It extracts the _basename_ of your file;
 - `files_mapping` use to jump over files using the previously extracted _basename_
 
-### Use an external terminal
+## Use an external terminal
 
 You can use the terminal of your choice to run tests in it. If you don't want to use `FTerm`, disable it with
 `fterm_enabled = false` and customize the command line with `terminal_command = ...`. For instance:
@@ -99,3 +99,12 @@ rails_minitest.setup({
   fterm_enabled = false
 })
 ```
+
+## Contributing
+
+This project is available on [gihub.com](https://github.com/theoo/rails-minitest.nvim) and
+[gitlab.com](https://gitlab.com/theoreichel/rails-minitest.nvim). If you want to contribute by
+opening an issue or a _Merge request_ please head to
+[gitlab.com/theoreichel/rails-minitest.nvim](https://gitlab.com/theoreichel/rails-minitest.nvim).
+Presence of this project on github is only to simplify installation with packer, _Pull requests_ only
+this platform will be rejected.
